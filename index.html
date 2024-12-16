@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ユキコのポートフォリオ</title>
+    <meta name="description" content="小雪のポートフォリオ">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/lij5mzc.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <p class="btn-gnavi">
+            <span></span>
+            <span></span>
+            <span></span>
+          </p>
+            <!--ナビケーションメニュー-->
+            <nav id="global-navi">
+                <ul class="menu">
+                    <li><a href="index.html#TOP">TOP</a></li>
+                    <li><a href="index.html#about">about</a></li>
+                    <li><a href="index.html#work">work</a></li>
+                    <li><a href="index.html#skill">skill</a></li>
+                    <li><a href="index.html#contact">contact</a></li>
+                </ul>
+            </nav>
+        <script>
+        $(function(){
+            $('.btn-gnavi').on('click',function(){
+              var rightVal = 0;
+              if($(this).hasClass('hb-open')){
+                rightVal = -300;
+                $(this).removeClass('hb-open');
+              }else{
+                $(this).addClass('hb-open');
+              }
+          
+              $('#global-navi').stop().animate({
+                right: rightVal
+              }, 200);
+            });
+          });
+        </script>
+    </header>
+    <main>
+        <article>
+            <div>
+                <h1 class="underline">Koyuki Kageyama</h1>
+                <p class="dc"><span>DESIGN/CODING</span></p>
+            </div>
+                <!--メイン画像-->
+            <div class="image-flower">
+                <div><img src="../images/5F414004-86AE-491E-920E-C0D8A06BAF25.jpg" alt="2/13誕生花フリージア"></div>
+            </div>
+            <div class="nav-container">
+                <ul class="menus">
+                    <li><a href="#about" class="nav-button">about</a></li>
+                    <li><a href="#work" class="nav-button">work</a></li>
+                    <li><a href="#skill" class="nav-button">skill</a></li>
+                    <li><a href="#contact" class="nav-button">contact</a></li>
+                </ul>
+            </div>
+            <!--about-->
+            <div id="about" class="about-container">
+                <h2 class="underline">about</h2>
+                <h3 class="kageyama">Koyuki Kageyama</h3>
+                <h4 class="kageyama">デザイン/コーディング</h4>
+                <p class="kageyama">千歳市出身<br>前職でwebサイトの画像加工、pop作りをしていました。見やすい色使いと若年層に刺さる今っぽいデザインを意識して作っていました。</p>
+                <div class="image-box">
+                    <img src="../images/IMG_3238 2.jpg" alt="本人画像" width="300">
+                </div>
+            </div>
+            <!--work-->
+            <div id="work" class="work-container">
+                <h2 class="underline">work</h2>
+                <div class="image-boxs">
+                    <img src="../images/IMG_3181.jpg" alt="作品">
+                </div>
+                <div class="image-boxss">
+                    <img src="../images/A98FB049-79A3-413D-8398-75B15B92ABB0.jpg" alt="作品2">
+                </div>
+                <div class="image-boxsss">
+                    <img src="../images/kadai000.jpg" alt="作品2">
+                </div>
+            </div>
+            <div class="more-contact">
+                <a href="more.html" class="more">MORE≫</a>
+            </div>
+            <!--skill-->
+            <div id="skill" class="skill-container">
+                <h2 class="underline">skill</h2>
+                <ul class="app-icon">
+                    <li>
+                        <div><img src="images/github-mark-white.png" alt="github"></div>
+                        <p class="appname">GitHub</p>
+                    </li>
+                    <li>
+                        <div><img src="images/vscode.png" alt="vscode"></div>
+                        <p class="appname0">Visual Studio<br>Code</p>
+                    </li>
+                    <li>
+                        <div><img src="images/WordPress-logotype-wmark.png" alt="wordpress"></div>
+                        <p class="appname1">WordPress</p>
+                    </li>
+                </ul>
+            </div>
+        </article>
+    </main>
+    <!--contact-->
+    <footer>
+        <h2 id="contact" class="underline">contact</h2>
+        <div class="image-flowers">
+            <img src="../images/S__41033731-Photoroom.png" alt="2/13誕生日花フリージア">
+        </div>
+        <h3 class="yukiko">Koyuki<br>Kageyama</h3>
+        <p class="contact">xxxxxxxx@icloud.com<br>080-0000-0000</p>
+        <ul class="sns-link">
+            <li>
+                <a class="snsicon" href="https://twitter.com/Koyuki153755"><img src="../images/logo-white.png" alt="Twitterのリンク"></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/profile.php?id=61556361781498"><img src="../images/Facebook_Logo_Secondary.png" alt="facebookのリンク"></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/dyukiko_213"><img src="../images/Instagram_Glyph_White.png" alt="instagramのリンク"></a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
